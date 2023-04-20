@@ -1,0 +1,82 @@
+<table border="3">
+    <tr>
+        <td>name</td>
+        <td>email</td>
+        <td>phone</td>
+        <td>password</td>
+    </tr>
+    <tbody id="record">
+    </tbody>
+</table>
+
+<script>
+    let data  = [
+    {
+        name:"nensi",
+        email:"nensi@gmail.com",
+        phone:"1234567890",
+        password:"2345"
+    },
+    {
+        name:"nensi",
+        email:"nensi@gmail.com",
+        phone:"1234567890",
+        password:"2345"
+    },
+    {
+        name:"nensi",
+        email:"nensi@gmail.com",
+        phone:"1234567890",
+        password:"2345"
+    },
+    {
+        name:"nensi",
+        email:"nensi@gmail.com",
+        phone:"1234567890",
+        password:"2345"
+    },
+    ]
+    let table = " ";
+    for(let i in data){
+        table +=`
+        <tr>
+            <td>${data[i].name}</td>
+            <td>${data[i].email}</td>
+            <td>${data[i].phone}</td>
+            <td>${data[i].password}</td>
+
+        </tr>
+        `
+    }
+    document.getElementById('record').innerHTML=table;
+
+    // map function for each
+    // let table = " ";
+    // data.map((val)=>){
+    //     table +=`
+    //     <tr>
+    //         <td>${data[i].name}</td>
+    //         <td>${data[i].email}</td>
+    //         <td>${data[i].phone}</td>
+    //         <td>${data[i].password}</td>
+
+    //     </tr>
+    //     `
+    // }
+
+    // arrow function
+    // const demo = () =>{
+    //     console.log("mahek hinal nensi")
+    // }
+    // demo();
+</script>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    function pat(a,b,c) {
+        if (a>b && a>c) {
+            return  111;
+        }else if(b>a && b>c){
+            return 222;
+        }else{
+            return 333;
+        }
+    }
+    var a=200,b=300,c=400
+    var  ans = pat(a,b,c);
+
+    if(ans == 111){
+        document.write("a is big");
+    }else if(ans == 222){
+        document.write("b is big");
+    }else{
+        document.write("c is big");
+    }
+</script>
